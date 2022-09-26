@@ -7,8 +7,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class ViewModel;
+
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) ViewModel *viewModel;
 
 @end
 

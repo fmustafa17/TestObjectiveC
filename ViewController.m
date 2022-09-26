@@ -7,7 +7,7 @@
 
 #import "ViewController.h"
 
-
+#import <TestObjectiveC-Swift.h>
 
 @interface ViewController ()
 
@@ -18,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.viewModel = [[ViewModel alloc] init];
+    NSLog(@"%@", [self.viewModel addWithNum1:9 num2:10]);
 }
 
 

@@ -21,6 +21,7 @@
     
     self.viewModel = [[ViewModel alloc] init];
     NSLog(@"%@", [self.viewModel addWithNum1:9 num2:10]);
+    NSLog(@"%@", [self.viewModel subtractWithNum1:100 num2:10]);
 }
 
 

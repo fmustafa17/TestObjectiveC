@@ -7,8 +7,12 @@
 
 import Foundation
 
-class ViewModel: NSObject {
-    @objc func add(num1: Int, num2: Int) -> String {
+@objcMembers class ViewModel: NSObject {
+    func add(num1: Int, num2: Int) -> String {
         return String(num1 + num2)
+    }
+    
+    func subtract(num1: Int, num2: Int) -> String {
+        return String(num1 - num2)
     }
 }
